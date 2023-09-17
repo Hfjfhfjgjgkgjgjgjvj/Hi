@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    touch-action: none; /* Disable default touch actions to enable swipe controls */
+}
+
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #cdc1b4;
+    border-radius: 5px;
+    color: #776e65;
+    width: 90px;
+    height: 90px;
+}
+
+.instructions {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    #grid-container {
+        width: 90vw;
+        height: 90vw;
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .cell {
+        width: 20vw;
+        height: 20vw;
+        max-width: 90px;
+        max-height: 90px;
+        font-size: 18px;
+    }
+}
